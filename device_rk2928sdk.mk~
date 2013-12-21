@@ -30,10 +30,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.rk2928board.rc:recovery/root/init.rk2928board.rc \
     $(LOCAL_PATH)/ramdisk/init.rk2928board.usb.rc:recovery/root/init.rk2928board.usb.rc \
     $(LOCAL_PATH)/ramdisk/ueventd.rk2928board.rc:recovery/root/ueventd.rk2928board.rc
-
-# enable ADB
-PRODUCT_PROPERTY_OVERRIDES := \
-        service.adb.root=1 \
-        ro.secure=0 \
-        ro.allow.mock.location=1 \
-        ro.debuggable=1
